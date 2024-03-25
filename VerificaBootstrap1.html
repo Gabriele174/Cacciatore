@@ -32,7 +32,6 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Visualizza</a></li>
             <li><a class="dropdown-item" href="#">Modifica</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">interagisci</a></li>
           </ul>
         </li>
@@ -40,16 +39,23 @@
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </ul>
-      </ul>
-      <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Login</a>
-        </li>
-      </form>
-      
+    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">io devo essere visibile per chi ha il cognome dalla s alla z</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="ProdottoHelp">
+    <div id="prodottohelpHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">codice prodotto</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</form>
     </div>
   </div>
 </nav>
