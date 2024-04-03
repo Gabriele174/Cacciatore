@@ -1,6 +1,6 @@
 function doLogin() {
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
+  var username = document.getElementById("exampleInputEmail1").value;
+  var password = document.getElementById("exampleInputPassword1").value;
   if(username === "" || password === "") {
       alert("Username and password are required.");
   }
