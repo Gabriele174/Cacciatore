@@ -1,7 +1,24 @@
-document.getElementById("loginButton").addEventListener("click", function() {
-  var username = document.getElementById("exampleInputEmail1").value;
-  var password = document.getElementById("exampleInputPassword1").value;
-  if(username === "" || password === "") {
-    alert("Username and password are required.");
+function doLogin (d) {
+  var username = document.getElementById("username").value;
+  var psw = document.getElementById("password").value;
+  if(username == "" || psw == "")   {
+      alert("username e password obbligatori");
   }
-});
+  else {
+          fetch('https://www.cacciaapi.altervista.org/login.php/loginIpad', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  "exampleInputUsername": username,
+                  "exampleInputPassword": password
+              })
+          })
+          .then(response => responsive.json())
+          .then(data => console.log(data))
+          .catch((error) =>{
+              console.error('Error:', error);
+          });
+      }
+}
